@@ -1,9 +1,12 @@
-lista = []
+fruta1 = input("Digite uma fruta: ")
+fruta2 = input("Digite outra fruta: ")
+fruta3 = input("Digite mais uma fruta: ")
 
-for i in range(3):
-    numero = int(input("Digite um número: "))
-    lista.append(numero)
+tupla = (fruta1, fruta2, fruta3)
 
-lista[2] = lista[0] + lista[1]
+busca = input("Digite uma fruta para buscar: ")
 
-print("Lista final:", lista)
+if busca in tupla:
+    print("Está na tupla")
+else:
+    print("Não está na tupla")
